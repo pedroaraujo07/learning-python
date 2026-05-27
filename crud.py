@@ -15,12 +15,15 @@ def read():
         print("Lista vazia")
 
 def update():
-    nomi = input("Digite um novo nome: ")
-    posi = int(input(f"Posição do novo nome (1 a {cont}): "))
-    if posi > 0 and posi <= cont:
-        nomes[posi - 1] = nomi
+    if len(nomes) > 0:
+        nomi = input("Digite um novo nome: ")
+        posi = int(input(f"Posição do novo nome (1 a {cont}): "))
+        if posi > 0 and posi <= cont:
+            nomes[posi - 1] = nomi
+        else:
+            print("Você deve digitar uma posição válida.")
     else:
-        print("Você deve digitar uma posição válida.")
+        print("Lista vazia.")
 
 def delete():
     nomx = input("Nome para ser excluido: ")
