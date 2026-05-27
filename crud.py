@@ -9,7 +9,10 @@ def create():
         nomes.append(nome)
 
 def read():
-    print(nomes)
+    if len(nomes) > 0:
+        print(nomes)
+    else:
+        print("Lista vazia")
 
 def update():
     nomi = input("Digite um novo nome: ")
