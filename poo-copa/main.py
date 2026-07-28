@@ -20,3 +20,5 @@ brasil.partida_mata_mata(1, 2)
 print(brasil)
 
 
+grupo_c.add_selecao(brasil)
+print(grupo_c)

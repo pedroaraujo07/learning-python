@@ -1,3 +1,6 @@
+
+
+
 class Selecao:
 
     def __init__(self, nome, rank, copas, continente):
