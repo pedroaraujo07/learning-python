@@ -66,6 +66,6 @@ class Selecao:
 
 
     def __str__(self):
-        return (f"\nSeleção: {self.nome} \nRank: {self.rank} \nCopas vencidas: {self.copas} \nContinente: {self.continente} \nVitórias: {self.vitorias} \nEmpates: {self.empates} \nDerrotas: {self.derrotas} \nGols Marcados: {self.gols_marcados} \nGols Sofridos: {self.gols_sofridos} \nPontos na Fase de Grupos: {self.pontos} \nFase em que parou: {self.fase}")
+        return (f"Seleção: {self.nome} \nRank: {self.rank} \nCopas vencidas: {self.copas} \nContinente: {self.continente} \nVitórias: {self.vitorias} \nEmpates: {self.empates} \nDerrotas: {self.derrotas} \nGols Marcados: {self.gols_marcados} \nGols Sofridos: {self.gols_sofridos} \nPontos na Fase de Grupos: {self.pontos} \nFase em que parou: {self.fase}\n")
     
     
