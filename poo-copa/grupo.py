@@ -9,6 +9,14 @@ class Grupo:
         self.letra = letra
 
     def add_selecao(self, selecao):
+        if selecao in self.grupo:
+            print(f"Aviso: {selecao.nome} já está no Grupo {self.letra}!")
+            return
+
+        if len(self.grupo) == 4:
+            print(f"Aviso: o limite máximo de seleções do Grupo {self.letra} foi atingido!")
+            return
+
         self.grupo.append(selecao)
 
 
