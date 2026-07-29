@@ -10,7 +10,7 @@ class Partida:
 
     def jogar(self, gols1, gols2):
             
-        if self.selecao1.fase == "Fase de grupos":
+        if self.selecao1.cont_fgrupos <= 3:
             self.selecao1.partida_grupos(gols1, gols2)
             self.selecao2.partida_grupos(gols2, gols1)
         else:

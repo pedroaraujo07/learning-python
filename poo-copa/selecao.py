@@ -14,11 +14,13 @@ class Selecao:
         self.gols_marcados = 0
         self.gols_sofridos = 0
         self.pontos = 0
+        self.cont_fgrupos = 0
         self.cont_mata_mata = 0
         self.fase = "Fase de grupos"
 
 
     def partida_grupos(self, gols_marcados_fgrupos, gols_sofridos_fgrupos):
+        self.cont_fgrupos += 1
         self.gols_marcados += gols_marcados_fgrupos
         self.gols_sofridos += gols_sofridos_fgrupos
         if gols_marcados_fgrupos > gols_sofridos_fgrupos:
@@ -64,6 +66,6 @@ class Selecao:
 
 
     def __str__(self):
-        return (f"Seleção: {self.nome} \nRank: {self.rank} \nCopas: {self.copas} \nContinente: {self.continente} \nVitórias: {self.vitorias} \nEmpates: {self.empates} \nDerrotas: {self.derrotas} \nGols Marcados: {self.gols_marcados} \nGols Sofridos: {self.gols_sofridos} \nPontos na Fase de Grupos: {self.pontos} \nFase em que parou: {self.fase}")
+        return (f"\nSeleção: {self.nome} \nRank: {self.rank} \nCopas vencidas: {self.copas} \nContinente: {self.continente} \nVitórias: {self.vitorias} \nEmpates: {self.empates} \nDerrotas: {self.derrotas} \nGols Marcados: {self.gols_marcados} \nGols Sofridos: {self.gols_sofridos} \nPontos na Fase de Grupos: {self.pontos} \nFase em que parou: {self.fase}")
     
     
