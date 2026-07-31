@@ -49,8 +49,27 @@ partida_b6.jogar(3, 1)
 
 
 grupo_c = Grupo("C")
-
 brasil = Selecao("Brasil", 5, 5, "América do Sul")
+marrocos = Selecao("Marrocos", 6, 0, "África")
+haiti = Selecao("Haiti", 88, 0, "América Central")
+escocia = Selecao("Escócia", 42, 0, "Europa")
+grupo_c.add_selecao(brasil)
+grupo_c.add_selecao(marrocos)
+grupo_c.add_selecao(haiti)
+grupo_c.add_selecao(escocia)
+partida_c1 = Partida(brasil, marrocos)
+partida_c1.jogar(1, 1)
+partida_c2 = Partida(haiti, escocia)
+partida_c2.jogar(0, 1)
+partida_c3 = Partida(escocia, marrocos)
+partida_c3.jogar(0, 1)
+partida_c4 = Partida(brasil, haiti)
+partida_c4.jogar(3, 0)
+partida_c5 = Partida(marrocos, haiti)
+partida_c5.jogar(4, 2)
+partida_c6 = Partida(escocia, brasil)
+partida_c6.jogar(0, 3)
+
 
 argentina = Selecao("Argentina", 2, 3, "América do Sul")
 
@@ -66,3 +85,9 @@ print(canada)
 print(bosnia)
 print(catar)
 print(suica)
+
+print(grupo_c)
+print(brasil)
+print(marrocos)
+print(haiti)
+print(escocia)
