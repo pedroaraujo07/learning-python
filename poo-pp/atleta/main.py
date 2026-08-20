@@ -51,7 +51,7 @@ if __name__ == "__main__":
     atleta2 = Atleta("Stephen Curry", "Basquete", 38, 5210000.00)
 
     atleta3 = Atleta("Charles Oliveira", "MMA", 36, 750000.00)
-    
+
 
     print(f"\n{atleta1.get_nome()} \n-Esporte: {atleta1.get_esporte()} \n-Idade: {atleta1.get_idade()} \n-Salário Mensal: {atleta1.get_salario():.2f} \n")
     
@@ -60,4 +60,15 @@ if __name__ == "__main__":
     print(f"\n{atleta3.get_nome()} \n-Esporte: {atleta3.get_esporte()} \n-Idade: {atleta3.get_idade()} \n-Salário Mensal: {atleta3.get_salario():.2f} \n")
 
 
-    
+    atleta3.set_nome("Sandrey")
+    atleta3.set_esporte("Futevôlei")
+    atleta3.set_idade(26)
+    atleta3.set_salario(35000.00)
+
+    print(f"\n{atleta3.get_nome()} \n-Esporte: {atleta3.get_esporte()} \n-Idade: {atleta3.get_idade()} \n-Salário Mensal: {atleta3.get_salario():.2f} \n")
+
+
+    atleta3.aumenta_salario(5000)
+    print(f"{atleta3.get_salario():.2f}")
+
+    print(atleta1.melhor_do_mundo())
