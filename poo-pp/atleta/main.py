@@ -41,6 +41,9 @@ class Atleta:
 
     def melhor_do_mundo(self):
         return(f"Para mim, o {self.nome} é o melhor atleta do mundo!")
+    
+    def __str__(self):
+        return(f"\n{self.get_nome()} \n-Esporte: {self.get_esporte()} \n-Idade: {self.get_idade()} \n-Salário Mensal: {self.get_salario():.2f} \n")
 
 
 
@@ -72,3 +75,5 @@ if __name__ == "__main__":
     print(f"{atleta3.get_salario():.2f}")
 
     print(atleta1.melhor_do_mundo())
+
+    print(atleta2)
