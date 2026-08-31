@@ -20,3 +20,5 @@ if __name__ == "__main__":
     print(produto2)
 
     print(produto1)
+
+    produto3 = Produto("Monitor LG Ultragear 180Hz", 300, 800)
