@@ -2,7 +2,7 @@
 
 class Produto:
 
-    def __init__(self, nome, v_compra, v_venda, q_estoque, q_minima):
+    def __init__(self, nome, v_compra, v_venda, q_estoque=100, q_minima=5):
         self.nome = nome
         self.v_compra = v_compra
         self.v_venda = v_venda
